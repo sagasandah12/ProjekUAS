@@ -22,5 +22,9 @@ public class tanggal extends Projek_UAS_PPD1 {
         Date date = new Date();
         return dt.format(date);
     }
+	
+	public void test(){
+		
+	}
 
 }
