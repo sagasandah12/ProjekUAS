@@ -4,45 +4,38 @@
  * and open the template in the editor.
  */
 package projek_uas_ppd1;
-
+import java.util.Scanner;
 /**
  *
  * @author StefanoZaghallo
  */
-import java.util.Scanner;
-
 public class jadwalpesan extends Projek_UAS_PPD1 {
-
     Scanner sc = new Scanner(System.in);
+    Projek_UAS_PPD1 ppd1 = new Projek_UAS_PPD1();
 
-    //variabel waktu
-    tanggal tgl = new tanggal();
+    public String nama1[] = new String[15];
 
-    //dalam satuan menit
-    int waktu(){
-        int wk[];
-        wk = new int[15];
-        for(int a =0;a<=15;a++){
-           wk[a] = sc.nextInt();
-        }
-        return ();
-    }
+    public int waktu1[] = new int[15];
+
+    public int harga1[] = new int[15];
+
+    public int totalharga1[] = new int[15];
     
+    public String nama2[] = new String[15];
 
-    double harga() {
-        return (double) (sc.nextDouble());
-    }
+    public int waktu2[] = new int[15];
 
-    double denda() {
-        if (waktu() > waktu()) {
+    public int harga2[] = new int[15];
 
-        } else {
-        }
-        return ((waktu() / 60) * 10000);
-    }
+    public int totalharga2[] = new int[15];
+    
+    public String nama3[] = new String[15];
 
-    double totalharga() {
-        return ((waktu() * harga()) + denda());
-    }
+    public int waktu3[] = new int[15];
 
+    public int harga3[] = new int[15];
+
+    public int totalharga3[] = new int[15];
+    
+    public int kodepesan[] = new int[200];
 }
