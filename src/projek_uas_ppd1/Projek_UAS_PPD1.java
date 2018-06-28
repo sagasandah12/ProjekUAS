@@ -55,6 +55,10 @@ public class Projek_UAS_PPD1 {
         System.out.println(" * Standar Nasional (25m x 15m)");
         System.out.println(" * Harga : 100 IDR");
 
+        System.out.println(" ");
+
+        System.out.println("4. Keluar ");
+
         System.out.println("==========================================");
         System.out.println("note : dilarang membawa barang berbahaya");
 
@@ -66,8 +70,13 @@ public class Projek_UAS_PPD1 {
             tabel1();
         } else if (pilih == 2) {
             tabel2();
-        } else if (pilih == 3){
+        } else if (pilih == 3) {
             tabel3();
+        } else if (pilih == 4) {
+            keluar();
+        } else {
+            System.out.println("Inputan salah ");
+            menu();
         }
 //akhir dari memasukkan pilihan 
     }//akhir menu()
@@ -143,7 +152,8 @@ public class Projek_UAS_PPD1 {
         }//akhir pilihan pesan atau kembali
 
     }//akhir tabel1()
-     //tabel pemesanan
+    //tabel pemesanan
+
     static void tabel2() {
 
         //melihat tabel apakah sudah ada pesan atau tidak
@@ -205,7 +215,7 @@ public class Projek_UAS_PPD1 {
             if (ch == 'Y' || ch == 'y') {
                 menu();
             } else if (ch == 'N' || ch == 'n') {
-                tabel1();
+                tabel2();
             }//akhir dari pertanyaan
 
             //pilihan ke-2, kembali ke menu
@@ -214,7 +224,8 @@ public class Projek_UAS_PPD1 {
         }//akhir pilihan pesan atau kembali
 
     }//akhir tabel1()
-     //tabel pemesanan
+    //tabel pemesanan
+
     static void tabel3() {
 
         //melihat tabel apakah sudah ada pesan atau tidak
@@ -276,7 +287,7 @@ public class Projek_UAS_PPD1 {
             if (ch == 'Y' || ch == 'y') {
                 menu();
             } else if (ch == 'N' || ch == 'n') {
-                tabel1();
+                tabel3();
             }//akhir dari pertanyaan
 
             //pilihan ke-2, kembali ke menu
